@@ -13,7 +13,7 @@ const TAGS = {
     class: "bg-[#a4c639] text-white",
   },
   PYTHON: {
-    name: "Pyhton",
+    name: "Python",
     class: "bg-[#4584b6] text-white",
   },
   KOTLIN: {
@@ -24,6 +24,15 @@ const TAGS = {
     name: "Java",
     class: "bg-[#5382a1] text-white",
   },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#474A8A] text-white",
+  },
+  MONGO: {
+    name: "MongoDB",
+    class: "bg-[#4DB33D] text-white",
+  },
+  
 };
 const PROJECTS = [
   {
@@ -31,9 +40,8 @@ const PROJECTS = [
     subtitle: " - Gestor de contraseñas (Web)",
     description:
       "SafeBit es un gestor de contraseñas seguro desarrollado con Flask. Utiliza el algoritmo PBKDF2 para cifrar las contraseñas mediante una clave maestra, asegurando que solo el usuario tenga acceso. La versión web ofrece una interfaz sencilla y segura para gestionar tus credenciales de manera eficiente.",
-    link: "https://mustardmule.onpella.app/",
     github: "https://github.com/dav1dgf/PasswordManagerFlask",
-    image: "/public/safebit_web.jpg",
+    image: "/safebit_web.jpg",
     tags: [TAGS.FLASK, TAGS.PYTHON],
   },
   {
@@ -42,9 +50,18 @@ const PROJECTS = [
     description:
       "La versión móvil de SafeBit para Android ofrece las mismas funcionalidades de gestión de contraseñas que la versión web, pero optimizada para dispositivos móviles. Utiliza la misma tecnología de cifrado y protección, permitiendo que accedas a tus contraseñas de forma segura desde cualquier lugar.",
     github: "https://github.com/dav1dgf/SafebitPasswordManagerAndroid",
-    image: "/public/android_studio.jpg",
+    image: "/android_studio.jpg",
     tags: [TAGS.ANDROID, TAGS.JAVA, TAGS.KOTLIN],
   },
+  {
+  "title": "Space Gallery",
+  "subtitle": " - Una Galería de Fotos Espaciales (Web)",
+  "description": "PHPGallery es una aplicación web desarrollada en PHP con el patrón MVC, diseñada para gestionar y mostrar galerías de fotos. Ofrece funciones como subida de archivos, aplicación de marcas de agua, generación de miniaturas y una galería interactiva con MongoDB como base de datos. La aplicación también incluye autenticación de usuarios, opciones de privacidad para fotos y un motor de búsqueda con AJAX.",
+  "github": "https://github.com/dav1dgf/phpGallery",
+  "image": "/galleryphp.jpg",
+  "tags": [TAGS.PHP, TAGS.MONGO],
+}
+
 ];
 
 
