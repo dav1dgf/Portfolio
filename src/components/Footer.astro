@@ -3,22 +3,22 @@ const currentYear = new Date().getFullYear()
 ---
 
 <footer
-  class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
+  class="opacity-80 mt-8 sm:mt-12 md:mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-6 sm:mb-10 px-4 sm:px-6 lg:px-8"
 >
   <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
+    class="rounded-lg w-full max-w-screen-xl mx-auto flex flex-col sm:flex-row items-center justify-between py-4 gap-4 sm:gap-0"
   >
-    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >© {currentYear} David Gutiérrez. Todos los derechos reservados
+    <span class="text-xs sm:text-sm text-center sm:text-left text-zinc-800/90 dark:text-zinc-200/90 order-2 sm:order-1"
+      >© {currentYear} David Gutiérrez. <span class="block sm:inline">Todos los derechos reservados</span>
     </span>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
+      class="flex flex-row items-center gap-4 sm:gap-6 text-sm font-medium dark:text-white/90 order-1 sm:order-2"
     >
       <li>
-        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
+        <a href="/#sobre-mi" class="hover:underline hover:text-red-100/90 transition-colors">Sobre mí</a>
       </li>
       <li>
-        <a id="contacto" href="mailto:davidgufw01@gmail.com" class="hover:underline"
+        <a id="contacto" href="mailto:davidgufw01@gmail.com" class="hover:underline hover:text-red-100/90 transition-colors"
           >Contacto</a
         >
       </li>

@@ -1,11 +1,20 @@
-<header class="flex justify-between items-center py-6 px-4 xl:w-[1120px]  z-10">
+---
+import MobileMenu from './MobileMenu.astro';
+---
+
+<header class="flex justify-between items-center py-4 px-4 sm:py-6 w-full max-w-[1120px] mx-auto z-10 relative">
     <img 
-        class="rounded-full w-14 h-14 mr-8"
+        class="rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
         src="/david.png" 
         alt="david photo"/>
-    <nav class="flex flex-row gap-x-10">
-        <a href="#top">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex flex-row gap-x-6 xl:gap-x-10">
+        <a href="#top" class="hover:text-red-100/90 transition-colors">Inicio</a>
+        <a href="#sobre-mi" class="hover:text-red-100/90 transition-colors">Sobre mí</a>
+        <a href="#proyectos" class="hover:text-red-100/90 transition-colors">Proyectos</a>
     </nav>
+    
+    <!-- Mobile Menu -->
+    <MobileMenu />
 </header>
